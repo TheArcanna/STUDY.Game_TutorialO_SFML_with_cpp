@@ -29,13 +29,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Animation_.h">
+    <ClInclude Include="Header\Animation_.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Player_.h">
+    <ClInclude Include="Header\Player_.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="constant.h">
+    <ClInclude Include="Header\constant.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
