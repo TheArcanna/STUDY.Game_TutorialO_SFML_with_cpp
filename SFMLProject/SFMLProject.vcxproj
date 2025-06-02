@@ -24,6 +24,7 @@
     <ProjectGuid>{c92497ac-ad8e-470a-be3d-09cb79c51c01}</ProjectGuid>
     <RootNamespace>SFMLProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>TutorialFiles</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -141,7 +142,7 @@
   <ItemGroup>
     <ClCompile Include="Animation_.cpp" />
     <ClCompile Include="constant.cpp" />
-    <ClCompile Include="main2.cpp" />
+    <ClCompile Include="main_.cpp" />
     <ClCompile Include="Player_.cpp" />
   </ItemGroup>
   <ItemGroup>
