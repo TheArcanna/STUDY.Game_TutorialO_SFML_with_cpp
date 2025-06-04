@@ -5,7 +5,7 @@ Collider::Collider(sf::RectangleShape& body) :
 	body(body)
 {
 }
-bool Collider::CheckCollision(Collider& other, float push)
+bool Collider::CheckCollision(Collider other, float push)
 {
     sf::Vector2f otherPosition = other.GetPosition();
     sf::Vector2f otherHalfSize = other.GetHalfSize();

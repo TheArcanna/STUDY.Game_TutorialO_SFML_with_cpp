@@ -8,7 +8,7 @@ Platform::Platform(sf::Texture* texture, sf::Vector2f frameSize, sf::Vector2f po
 	body.setSize(frameSize);
 	body.setTexture(texture);
 	body.setOrigin(body.getSize() / 2.0f);
-
+	body.setPosition(position);
 }
 
 

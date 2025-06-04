@@ -40,11 +40,12 @@ void Player_::Update(float deltaTime)
 		row = 0;//Idle
 	}
 	else {
-		if (movement.x && movement.y) {
-			row = 3;//diagonal Up only
-			FLIP = (movement.x < 0.0f);
-		}
-		else if (movement.x) {
+		//if (movement.x && movement.y) {
+		//	row = 3;//diagonal Up only
+		//	FLIP = (movement.x < 0.0f);
+		//}
+		//else
+		if (movement.x) {
 			row = 5;// left & right
 			FLIP = (movement.x > 0.0f);
 		}

@@ -26,8 +26,8 @@ int main() {
 
 	Player_ player(&playerBodyTexture, sf::Vector2u(6, 6), 0.3f, 100);
 
-	Platform platform1(nullptr, sf::Vector2f(100, 50), sf::Vector2f(580, 600));
-
+	Platform platform1(nullptr, sf::Vector2f(400, 200), sf::Vector2f(512, 200));
+	Platform platform2(nullptr, sf::Vector2f(400, 200), sf::Vector2f(512, 0));
 
 	float deltaTime;
 	sf::Clock clock;
@@ -60,10 +60,11 @@ int main() {
 		}
 		//	BasicEvent Ended
 
-
+		
 		player.Update(deltaTime);
 
-		platform1.GetCollider().CheckCollision(player.GetCollider(), 1.0f);
+		platform1.GetCollider().CheckCollision(player.GetCollider(), 0.0f);
+		platform2.GetCollider().CheckCollision(player.GetCollider(), 1.0f);
 
 
 		playerView.setCenter(player.GetPosition());
@@ -72,6 +73,7 @@ int main() {
 		window.clear(sf::Color::Black);
 		//	Drawing
 		window.setView(playerView);
+		platform2.Draw(window);
 		platform1.Draw(window);
 		player.Draw(window);
 		//	Displaying
