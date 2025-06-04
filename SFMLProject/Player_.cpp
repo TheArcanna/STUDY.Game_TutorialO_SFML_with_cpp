@@ -1,7 +1,7 @@
 #include<SFML/Graphics.hpp>
-#include "Animation_.h"
-#include "Player_.h"
-#include "constant.h"
+#include "Header/Animation_.h"
+#include "Header/Player_.h"
+#include "Header/constant.h"
 
 Player_::Player_(sf::Texture* texture, sf::Vector2u imageCount, float switchTime, float Speed) :
 	bodyTextureAnimation(texture, imageCount, switchTime)

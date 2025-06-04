@@ -141,14 +141,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Animation_.cpp" />
+    <ClCompile Include="Collider.cpp" />
     <ClCompile Include="constant.cpp" />
     <ClCompile Include="main_.cpp" />
+    <ClCompile Include="Platform.cpp" />
     <ClCompile Include="Player_.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Header\Collider.h" />
     <ClInclude Include="Header\Animation_.h" />
     <ClInclude Include="Header\constant.h" />
     <ClInclude Include="Header\Player_.h" />
+    <ClInclude Include="Header\Platform.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
